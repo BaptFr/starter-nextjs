@@ -1,0 +1,23 @@
+{
+  "recommendations": [
+    "formulahendry.auto-rename-tag",
+    "aaron-bond.better-comments",
+    "wallabyjs.console-ninja",
+    "ms-azuretools.vscode-containers",
+    "cweijan.vscode-database-client2",
+    "usernamehw.errorlens",
+    "dbaeumer.vscode-eslint",
+    "github.copilot",
+    "eamodio.gitlens",
+    "cweijan.vscode-office",
+    "pkief.material-icon-theme",
+    "christian-kohler.path-intellisense",
+    "postman.postman-for-vscode",
+    "esbenp.prettier-vscode",
+    "mechatroner.rainbow-csv",
+    "meganrogge.template-string-converter",
+    "vitest.explorer",
+    "ms-playwright.playwright",
+    "bradlc.vscode-tailwindcss"
+  ]
+}
