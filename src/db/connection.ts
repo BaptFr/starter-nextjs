@@ -4,4 +4,5 @@ import { Pool } from 'pg'
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL
 })
+//orm drizzle en typescript
 export const db = drizzle({ client: pool })

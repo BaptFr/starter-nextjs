@@ -1,3 +1,6 @@
+import 'dotenv/config'
+
+
 export const getDatabaseURL = (): string => {
   const dbName = process.env.DB_NAME
   const dbUser = process.env.DB_USER

@@ -10,11 +10,14 @@
     "lint": "eslint",
     "drizzle:generate": "drizzle-kit generate --config ./drizzle.config.ts",
     "drizzle:migrate": "drizzle-kit migrate --config ./drizzle.config.ts",
+    "env:start": "docker compose -f docker-compose.infra.yml up -d",
+    "env:end": "docker compose-f docker-compose.infra.yml  down -d",
     "tsx": "tsx",
-    "test":"vitest"
+    "test": "vitest"
   },
   "dependencies": {
     "dotenv": "^17.2.3",
+    "drizzle": "^1.4.0",
     "drizzle-orm": "^0.44.7",
     "next": "16.0.0",
     "pg": "^8.16.3",
