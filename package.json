@@ -10,7 +10,8 @@
     "lint": "eslint",
     "drizzle:generate": "drizzle-kit generate --config ./drizzle.config.ts",
     "drizzle:migrate": "drizzle-kit migrate --config ./drizzle.config.ts",
-    "tsx": "tsx"
+    "tsx": "tsx",
+    "test":"vitest"
   },
   "dependencies": {
     "dotenv": "^17.2.3",
