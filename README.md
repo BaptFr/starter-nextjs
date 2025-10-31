@@ -1,36 +1,181 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+</br>
 
-## Getting Started
 
-First, run the development server:
+<div align="center">
+<img src="https://decentro.tech/blog/wp-content/uploads/bugs-bunny-new-1.gif" /> 
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
+</br>
+
+<div align="center">
+
+### Un **starter Next.js** moderne et typé, conçu pour accélérer le développement de projets fullstack avec comme stack: </br> **Next.js**, **TypeScript**, **TailwindCSS**, **Drizzle ORM**, **PostgreSQL**, **Vitest**, **Playwright**, et **Docker**.
+</div>
+
+---
+
+##  Stack technique
+
+-  **Next.js 16** — Framework React fullstack
+-  **TypeScript** — Typage statique pour un code sûr et maintenable
+- 🎨 **TailwindCSS 4** — Design rapide et réactif
+-  **Drizzle ORM** — ORM moderne et typé
+- 🐘 **PostgreSQL** — Base de données SQL puissante et fiable
+- 🧪 **Vitest** — Tests unitaires rapides et intégrés
+-  **Playwright** — Tests end-to-end performants
+- 🐳 **Docker** — Environnement reproductible pour le dev
+- 🧹 **ESLint & Prettier** — Style et qualité de code automatisés
+-  **Concurrently** — Lancement simultané du serveur et de l’infra
+-  **VSCode Settings** — Configuration de dev préintégrée
+
+---
+
+🚀 **Démarrage rapide**
+</br>
+
+
+**1 -- Cloner le projet**
+
+</br>
+
+**2 -- Installer les dépendances**
+💡 Ce projet utilise pnpm. Si tu ne l’as pas encore :
+
+npm install -g pnpm
+
+pnpm install
+
+</br>
+
+**3 -- Lancer l’environnement complet** (Docker + Next.js)
+
 pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+</br>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Cela lance :
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🐳 les conteneurs Docker définis dans docker-compose.infra.yml (ex: PostgreSQL)
 
-## Learn More
+⚡ le serveur Next.js sur http://localhost:3000
 
-To learn more about Next.js, take a look at the following resources:
+🗄️ Base de données (PostgreSQL + Drizzle)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+</br>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+</br>
 
-## Deploy on Vercel
+Ce starter inclut Drizzle ORM configuré avec PostgreSQL.
+Les fichiers de configuration se trouvent dans le dossier drizzle/ et drizzle.config.ts.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+</br>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Commandes principales**
+
+pnpm drizzle:generate # Génère les migrations à partir du schéma
+pnpm drizzle:migrate # Exécute les migrations dans la base
+
+</br>
+
+💾 **La base PostgreSQL tourne via Docker (voir docker-compose.infra.yml).**
+
+🧪 **Tests**
+**Tests unitaires (Vitest)**
+
+pnpm test
+
+**Tests End-to-End (Playwright)**
+
+pnpm e2e
+
+Les configs correspondantes se trouvent dans :
+
+vitest.config.mjs
+
+playwright.config.ts
+
+</br>
+
+---
+
+</br>
+
+
+🧰 **Scripts disponibles**
+
+**Commande avec descriptions**: 
+
+pnpm dev	Lance Next.js + Docker en parallèle
+
+pnpm build	Build pour la production
+
+pnpm start	Démarre l’app buildée
+
+pnpm format	Formate le code avec Prettier
+
+pnpm lint	Vérifie la qualité du code
+
+pnpm drizzle:generate	Génère les migrations Drizzle
+
+pnpm drizzle:migrate	Applique les migrations Drizzle
+
+pnpm env:start	Lance l’infrastructure (PostgreSQL, etc.)
+
+pnpm env:end	Stoppe l’infrastructure Docker
+
+pnpm test	Lance les tests unitaires (Vitest)
+
+</br>
+
+
+---
+
+</br>
+
+
+🧱 **Structure du projet**
+
+.
+├── .github/workflows/     # CI/CD GitHub Actions
+
+├── .vscode/               # Configuration VSCode
+
+├── drizzle/               # Migrations et schémas DB
+
+├── e2e/                   # Tests end-to-end
+
+├── public/                # Assets publics
+
+├── src/                   # Code source principal
+
+├── tests/                 # Tests unitaires
+
+├── docker-compose.infra.yml
+
+├── drizzle.config.ts
+
+├── vitest.config.mjs
+
+├── playwright.config.ts
+
+└── package.json
+
+</br>
+
+
+---
+
+</br>
+
+🧑‍💻**Développement**
+
+✏️ Édite librement dans le dossier src/
+
+🧩 Ajoute tes routes API via src/app/api/
+
+🧱 Crée tes modèles et schémas dans drizzle/
+
+🧪 Ajoute tes tests dans tests/ ou e2e/ .
+
+---
+
