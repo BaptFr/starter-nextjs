@@ -1,20 +1,23 @@
+
+
+<div align="center">
+
+## Un **starter Next.js** moderne et typé, conçu pour accélérer le développement de projets fullstack 
+</div>
+
+
 </br>
 
 
 <div align="center">
-<img src="https://decentro.tech/blog/wp-content/uploads/bugs-bunny-new-1.gif" /> 
+<img src="https://media1.tenor.com/m/4D3DhzVOu-oAAAAC/press-any-key-any-key.gif" height="500" /> 
 </div>
 
 </br>
-
-<div align="center">
-
-### Un **starter Next.js** moderne et typé, conçu pour accélérer le développement de projets fullstack avec comme stack: </br> **Next.js**, **TypeScript**, **TailwindCSS**, **Drizzle ORM**, **PostgreSQL**, **Vitest**, **Playwright**, et **Docker**.
-</div>
 
 ---
 
-##  Stack technique
+##  Stack 
 
 -  **Next.js 16** — Framework React fullstack
 -  **TypeScript** — Typage statique pour un code sûr et maintenable
